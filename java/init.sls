@@ -27,6 +27,7 @@ java_{{ package }}_{{ id }}_archive:
     {% endif %}
     - archive_format: {{ data.archive_format|default('tar') }}
     - keep: {{ data.archive_cache|default(True) }}
+    - tar_options: z
 
 java_{{ package }}_{{ id }}_perm:
   file:
